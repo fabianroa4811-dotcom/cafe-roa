@@ -1,492 +1,76 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- FRASCO GRANDE -->
+<div class="producto">
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h3>FRASCO GRANDE</h3>
 
-<title>Café Roa</title>
-
-<style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-
-    background: linear-gradient(
-        135deg,
-        #3b2417 0%,
-        #70452a 25%,
-        #c58b52 50%,
-        #f5ead7 75%,
-        #8b5a2b 100%
-    );
-
-    background-size: 400% 400%;
-    animation: fondoCafe 15s ease infinite;
-
-    color: #3b2417;
-}
-
-@keyframes fondoCafe {
-
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-
-}
-
-
-/* =========================
-   ENCABEZADO
-========================= */
-
-header {
-    background: #3b2417;
-    color: white;
-    text-align: center;
-    padding: 55px 20px;
-}
-
-header h1 {
-    font-size: 60px;
-    margin: 10px 0;
-}
-
-header p {
-    font-size: 19px;
-    margin: 8px;
-}
-
-
-/* =========================
-   PRODUCTOS
-========================= */
-
-section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-h2 {
-    text-align: center;
-    font-size: 34px;
-}
-
-.productos {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.producto {
-    background: white;
-    width: 280px;
-    padding: 25px;
-    text-align: center;
-    border-radius: 18px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
-
-.producto h3 {
-    color: #304d2b;
-}
-
-
-/* =========================
-   IMÁGENES DE LOS FRASCOS
-========================= */
-
-.producto img {
-    width: 240px;
-    height: 240px;
-
-    object-fit: contain;
-
-    display: block;
-    margin: 5px auto;
-
-    /* ZOOM */
-    transform: scale(1.15);
-}
-
-
-/* =========================
-   PRECIOS
-========================= */
-
-.precio {
-    font-size: 30px;
-    font-weight: bold;
-
-    color: #3b2417;
-
-    margin: 10px;
-}
-
-
-/* =========================
-   INFORMACIÓN
-========================= */
-
-.informacion {
-    background: #3b2417;
-    color: white;
-
-    max-width: none;
-}
-
-.informacion-contenido {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.informacion h2 {
-    color: #f7ecd5;
-}
-
-.informacion p {
-    font-size: 18px;
-}
-
-
-/* =========================
-   HISTORIA
-========================= */
-
-.historia {
-    text-align: center;
-}
-
-.historia p {
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-
-/* =========================
-   PEDIDOS
-========================= */
-
-.pedidos {
-    text-align: center;
-    background: #f7ecd5;
-}
-
-.pedidos p {
-    font-size: 19px;
-}
-
-
-/* =========================
-   BOTÓN WHATSAPP
-========================= */
-
-.boton {
-    display: inline-block;
-
-    background: #25d366;
-    color: white;
-
-    text-decoration: none;
-
-    padding: 16px 30px;
-
-    border-radius: 30px;
-
-    margin-top: 20px;
-
-    font-weight: bold;
-    font-size: 18px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
-
-.boton:hover {
-    background: #1ebe5d;
-}
-
-
-/* =========================
-   PIE DE PÁGINA
-========================= */
-
-footer {
-    background: #21140d;
-    color: white;
-
-    text-align: center;
-
-    padding: 30px 20px;
-}
-
-footer p {
-    margin: 5px;
-}
-
-
-/* =========================
-   CELULARES
-========================= */
-
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 45px;
-    }
-
-    header p {
-        font-size: 17px;
-    }
-
-    .producto {
-        width: 90%;
-    }
-
-    .producto img {
-        width: 220px;
-        height: 220px;
-
-        object-fit: contain;
-
-        transform: scale(1.1);
-    }
-
-}
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<!-- =========================
-     ENCABEZADO
-========================= -->
-
-<header>
-
-    <h1>☕ CAFÉ ROA</h1>
-
-    <p>
-        Café artesanal, natural y de nuestra tierra.
-    </p>
-
-    <p>
-        100% café colombiano · Sin químicos ni herbicidas
-    </p>
-
-</header>
-
-
-<!-- =========================
-     PRODUCTOS
-========================= -->
-
-<section>
-
-    <h2>Nuestras presentaciones</h2>
-
-    <div class="productos">
-
-
-        <!-- FRASCO GRANDE -->
-
-        <div class="producto">
-
-            <h3>FRASCO GRANDE</h3>
-
-            <img
-                src="imagenes/grande.png"
-                alt="Café 250 gramos"
-            >
-
-            <p>
-                <strong>250 gramos</strong>
-            </p>
-
-            <div class="precio">
-                $18.000
-            </div>
-
-            <p>
-                Ideal para disfrutar en casa
-                y compartir un buen café.
-            </p>
-
-        </div>
-
-
-        <!-- FRASCO MEDIANO -->
-
-        <div class="producto">
-
-            <h3>FRASCO MEDIANO</h3>
-
-            <img
-                src="imagenes/mediano.png"
-                alt="Café 125 gramos"
-            >
-
-            <p>
-                <strong>125 gramos</strong>
-            </p>
-
-            <div class="precio">
-                $11.000
-            </div>
-
-            <p>
-                Una presentación práctica
-                con todo el sabor del café.
-            </p>
-
-        </div>
-
-
-        <!-- FRASCO PEQUEÑO -->
-
-        <div class="producto">
-
-            <h3>FRASCO PEQUEÑO</h3>
-
-            <img
-                src="imagenes/pequeno.png"
-                alt="Café 75 gramos"
-            >
-
-            <p>
-                <strong>75 gramos</strong>
-            </p>
-
-            <div class="precio">
-                $7.500
-            </div>
-
-            <p>
-                Perfecto para probar,
-                regalar o llevar contigo.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     INFORMACIÓN DEL CAFÉ
-========================= -->
-
-<section class="informacion">
-
-    <div class="informacion-contenido">
-
-        <h2>Características</h2>
-
-        <p>🌱 Café natural</p>
-
-        <p>☕ 100% café colombiano</p>
-
-        <p>🏡 Producción artesanal</p>
-
-        <p>🚫 Sin químicos ni herbicidas</p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     HISTORIA
-========================= -->
-
-<section class="historia">
-
-    <h2>De nuestra tierra a tu taza</h2>
-
-    <p>
-        Café producido de manera artesanal,
-        conservando el aroma, sabor y calidad
-        de un buen café colombiano.
-    </p>
-
-    <p>
-        Un producto elaborado desde nuestra tierra
-        directamente para disfrutar en tu taza.
-    </p>
-
-</section>
-
-
-<!-- =========================
-     PEDIDOS
-========================= -->
-
-<section class="pedidos" id="contacto">
-
-    <h2>Haz tu pedido</h2>
-
-    <p>
-        Escríbenos directamente por WhatsApp
-        para realizar tu pedido.
-    </p>
-
-
-    <!--
-    NÚMERO DE WHATSAPP:
-    +57 304 485 5812
-    -->
-
-    <a
-        class="boton"
-        href="https://wa.me/573044855812?text=Hola%2C%20estoy%20interesado%20en%20comprar%20Caf%C3%A9%20Roa."
-        target="_blank"
+    <img
+        src="imagenes/grande.png"
+        alt="Café 250 gramos"
     >
 
-        📲 PEDIR POR WHATSAPP
-
-    </a>
-
-</section>
-
-
-<!-- =========================
-     PIE DE PÁGINA
-========================= -->
-
-<footer>
-
     <p>
-        Natural · Artesanal · Colombiano
+        <strong>250 gramos</strong>
     </p>
 
+    <div class="precio">
+        $18.000
+    </div>
+
     <p>
-        © 2026
+        Ideal para disfrutar en casa
+        y compartir un buen café.
     </p>
 
-</footer>
+</div>
 
 
-</body>
+<!-- FRASCO MEDIANO -->
+<div class="producto">
 
-</html>
+    <h3>FRASCO MEDIANO</h3>
+
+    <img
+        src="imagenes/mediano.png"
+        alt="Café 125 gramos"
+    >
+
+    <p>
+        <strong>125 gramos</strong>
+    </p>
+
+    <div class="precio">
+        $11.000
+    </div>
+
+    <p>
+        Una presentación práctica
+        con todo el sabor del café.
+    </p>
+
+</div>
+
+
+<!-- FRASCO PEQUEÑO -->
+<div class="producto">
+
+    <h3>FRASCO PEQUEÑO</h3>
+
+    <img
+        src="imagenes/pequeno.png"
+        alt="Café 75 gramos"
+    >
+
+    <p>
+        <strong>75 gramos</strong>
+    </p>
+
+    <div class="precio">
+        $7.500
+    </div>
+
+    <p>
+        Perfecto para probar,
+        regalar o llevar contigo.
+    </p>
+
+</div>
